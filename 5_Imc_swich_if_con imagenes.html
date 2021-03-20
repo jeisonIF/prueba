@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var pes=parseInt(prompt("Digite su peso"))
+        var tall=parseFloat(prompt("Digite su estatura"))
+        var sex=prompt("Digite su sexo M o F")
+        switch(sex){
+            case 'm'||'M':
+                var cua=(tall*tall)
+                var imc=parseInt(pes/cua)
+                //document.write(imc+"<br>")
+            
+                if(imc<=18.5){
+               
+                    document.write(imc+"<br>")
+                    document.write("==> BAJO"+"<br>")
+                    document.write('<img src="siruetas/m1.jpg">'+"<br>")
+
+                }else if(imc>18.5 && imc<=24.9){
+                    document.write(imc+"<br>")
+                    document.write("==> NORMAL"+"<br>")
+                    document.write('<img src="siruetas/m2.jpg">'+"<br>")
+
+
+                }else if(imc>=25 && imc<=29.9){
+                    document.write(imc+"<br>")
+                    document.write("==> SOBREPESO"+"<br>")
+                    document.write('<img src="siruetas/m2.jpg">'+"<br>")
+
+                }else if(imc>=30){
+                    document.write(imc+"<br>")
+                    document.write("==> OBESO"+"<br>")
+                    document.write('<img src="siruetas/m2.jpg">'+"<br>")
+                }
+                break;
+
+            case 'f'||'F':
+            
+                var cua1=(tall*tall)
+                var imc1=parseInt(pes/cua1)
+                //document.write(imc+"<br>")
+            
+                if(imc1<=18.5){
+               
+                    document.write(imc1+"<br>")
+                    document.write("==> BAJO"+"<br>")
+                    document.write('<img src="siruetas/f1.png">'+"<br>")
+
+                }else if(imc1>18.5 && imc1<=24.9){
+                    document.write(imc1+"<br>")
+                    document.write("==> NORMAL"+"<br>")
+                    document.write('<img src="siruetas/f2.png">'+"<br>")
+
+
+                }else if(imc1>=25 && imc1<=29.9){
+                    document.write(imc1+"<br>")
+                    document.write("==> SOBREPESO"+"<br>")
+                    document.write('<img src="siruetas/f3.png">'+"<br>")
+
+                }else if(imc1>=30){
+                    document.write(imc1+"<br>")
+                    document.write("==> OBESO"+"<br>")
+                    document.write('<img src="siruetas/f4.png">'+"<br>")
+                
+                }
+                break;
+
+                default:
+                document.write("Dato Erroneo")
+
+                
+            }
+        
+
+        
+
+    </script>
+    
+</body>
+</html>
